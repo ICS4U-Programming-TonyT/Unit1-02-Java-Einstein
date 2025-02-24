@@ -29,7 +29,7 @@ final class Einstein {
             final float floatMass = Float.parseFloat(stringMass);
             if (floatMass > 0) {
                 /* Calculate Speed of Light */
-                final float SPEED = 2.998f * 108f;
+                final double SPEED = Math.pow(2.998f, 10f);
                 /* Calculate Energy Released*/
                 final double ENERGY = floatMass * Math.pow(SPEED, 2f);
                 System.out.printf("The amount of energy released "
